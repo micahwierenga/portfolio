@@ -295,7 +295,7 @@ h3 {
 /*Experience / Education*/
 
 
-@media(min-width:992px) {
+@media screen and (min-width:992px) {
     .timeline-md {
         position: relative;
         top: 100px;
@@ -317,7 +317,7 @@ h3 {
     }
 }
 
-@media(max-width:991px) {
+@media screen and (max-width:991px) {
     .timeline-md {
         position: relative;
         top: 100px;
