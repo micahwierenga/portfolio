@@ -5,7 +5,7 @@ experience.forEach((e, idx) => {
         <div id="${e.id}-container" class="col-md-3 experience-container">
             <div class="service-item exp">
                 <h4>
-                    <strong>${e.companyName}</strong>
+                    <strong><a href="${e.link}" target="_blank">${e.companyName}</a></strong>
                 </h4>
                 <p>${e.role}<br>
                 ${e.howLong}</p>
@@ -20,36 +20,26 @@ $('.service-item').on('mouseover', function(e) {
     const companyObj = experience.find(e => e.id === companyId);
     $(this).css('background', 'var(--tertiary)');
     $(this).css('color', 'var(--primary)');
-    // $(this).html(backCopy);
+    $('div.hover').css('background', 'var(--primary)');
+    $('.service-item.exp a').css('color', 'var(--primary)');
     $('.skill-name-container').each(function() {
         if(companyObj.skills.includes($(this).text().trim().toLowerCase())) {
             $(this).addClass('found-skill-name faded-white');
             $(this).siblings('.skill-icon-container').addClass('faded-white');
         }
     });
+    $('.experience-description').text(companyObj.description).css({'background': 'var(--tertiary)', 'color': 'var(--primary)'})
+    $('.experience-description').toggleClass('experience-description-padding');
 })
-
-// $('.service-item').flip({trigger: 'hover'});
 
 $('.service-item').on('mouseout', function() {
     $(this).css('background', 'var(--secondary)');
     $(this).css('color', 'var(--tertiary)');
+    $('div.hover').css('background', 'white');
+    $('.service-item.exp a').css('color', 'var(--tertiary)');
     $('.skill-name-container').each(function() {
         $(this).removeClass('found-skill-name faded-white');
         $(this).siblings('.skill-icon-container').removeClass('faded-white');
     });
+    $('.experience-description').empty().toggleClass('experience-description-padding');
 })
-
-const m = String.fromCodePoint(0x26F0);
-
-console.log(`
-${m}      ${m}  ${m}    ${m}${m}${m}${m}        ${m}        ${m}      ${m}
-${m}${m}  ${m}${m}  ${m}  ${m}               ${m}${m}       ${m}      ${m}
-${m} ${m}${m} ${m}  ${m}  ${m}              ${m}  ${m}      ${m}      ${m}
-${m}  ${m}  ${m}  ${m}  ${m}             ${m}${m}${m}${m}     ${m}${m}${m}${m}${m}
-${m}      ${m}  ${m}  ${m}            ${m}      ${m}    ${m}      ${m}
-${m}      ${m}  ${m}  ${m}           ${m}        ${m}   ${m}      ${m}
-${m}      ${m}  ${m}    ${m}${m}${m}${m}  ${m}          ${m}  ${m}      ${m}
-
-If you'd like to chat, here's my resume: http://www.micahwierenga.com/micahwierenga_resume.pdf
-`)

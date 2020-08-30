@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +9,9 @@
     <meta name="author" content="">
 
     <title>Micah Wierenga</title>
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -23,20 +23,13 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Custom JS -->
     <script src="js/skills-array.js"></script>
     <script defer src="js/skills.js"></script>
     <script src="js/experience-array.js"></script>
     <script defer src="js/experience.js"></script>
-
 </head>
 
 <body>
@@ -113,14 +106,16 @@
                     <div class="skills-container">
                         
                     </div>
-                    <i class="devicon-amazonwebservices-original"></i>
-                    <hr class="small">
+                    <!-- <hr class="small"> -->
                     <!-- <hr class="timeline-md"> -->
+                    <div class="hover">
+                        Hover over each job above to see my experience
+                    </div>
                     <div class="row experiences-container">
                         
                     </div>
-                    <div>
-                        Hover over each job above to see my experience
+                    <div class="experience-description">
+                        
                     </div>
                     <!-- /.row (nested) -->
                 </div>
@@ -157,7 +152,7 @@
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Micah Wierenga 2020</p>
+                    <p class="text-muted">Copyright &copy; Micah Wierenga <span class="this-year"></span></p>
                 </div>
             </div>
         </div>
@@ -189,7 +184,7 @@
                     let target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                     if (target.length) {
-                        $('html,body').animate({
+                        $('html, body').animate({
                             scrollTop: target.offset().top
                         }, 1000);
                         return false;
@@ -222,6 +217,20 @@
                 }
             }
         });
+
+        $('.this-year').text(new Date().getFullYear());
+
+console.log(
+`
+ _____ _         _      _ _ _ _                         
+|     |_|___ ___| |_   | | | |_|___ ___ ___ ___ ___ ___ 
+| | | | |  _| .'|   |  | | | | | -_|  _| -_|   | . | .'|
+|_|_|_|_|___|__,|_|_|  |_____|_|___|_| |___|_|_|_  |__,|
+                                               |___|    
+
+Congratulations, you have found my resume: http://www.micahwierenga.com/micahwierenga_resume.pdf
+`
+)
     </script>
 
 </body>

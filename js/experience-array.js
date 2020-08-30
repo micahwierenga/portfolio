@@ -4,6 +4,7 @@ const experience = [
         role: 'Web Content Manager',
         howLong: '2014 &mdash; 2016',
         id: 'ferrarifilms',
+        link: 'http://www.ferrarifilms.com/',
         description: 'stuff',
         skills: ['html5']
     },
@@ -12,14 +13,16 @@ const experience = [
         role: 'Software Engineering Fellow/Part-time Instructor',
         howLong: '2016 &mdash; present',
         id: 'gastudent',
+        link: 'https://generalassemb.ly/',
         description: 'stuff',
-        skills: ['html5', 'css3', 'javascript', 'jquery', 'nodejs', 'react', 'php', 'python', 'postgresql', 'mongodb']
+        skills: ['html5', 'css3', 'javascript', 'jquery', 'git', 'nodejs', 'react', 'php', 'python', 'postgresql', 'mongodb']
     },
     {
         companyName: 'RE/MAX',
         role: 'Back-end Engineer',
         howLong: '2017 &mdash; 2019',
         id: 'remax',
+        link: 'https://www.remax.com/',
         description: 'stuff',
         skills: [
             'html5',
@@ -27,6 +30,7 @@ const experience = [
             'javascript',
             'jquery',
             'vue',
+            'git',
             'php',
             'laravel',
             'mysql',
@@ -40,12 +44,14 @@ const experience = [
         role: 'Instructor Lead',
         howLong: '2019 &mdash; present',
         id: 'gainstructor',
-        description: 'stuff',
+        link: 'https://generalassemb.ly/',
+        description: 'I have the privilege of helping students advance their programming skills significantly on their journey toward becoming professional software engineers. Besides teaching programming concepts, I\'ve also built projects and tools to demonstrate the mechanics of NodeJS, Django, and React.',
         skills: [
             'html5',
             'css3',
             'javascript',
             'jquery',
+            'git',
             'react',
             'python',
             'django',

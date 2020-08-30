@@ -3,7 +3,7 @@ skills.forEach(skill => {
     div.innerHTML = 
         `<div class="skill-container">
             <div id="${skill.name.toLowerCase()}-icon" class="skill-icon-container">
-                <img class="skill-icon" src="${skill.imagePath}" alt="${skill.name} icon">
+                <i class="${skill.deviconClass} devicon-icon"></i>
             </div>
             <div id="${skill.name.toLowerCase()}-name" class="skill-name-container">
                 ${skill.name}

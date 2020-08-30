@@ -39,11 +39,11 @@ const skills = [
         imagePath: 'img/django/django-plain.svg',
         deviconClass: 'devicon-django-plain',
     },
-    {
-        name: 'Flask',
-        imagePath: 'img/flask/flask.png',
-        deviconClass: '',
-    },
+    // {
+    //     name: 'Flask',
+    //     imagePath: 'img/flask/flask_white.png',
+    //     deviconClass: null,
+    // },
     {
         name: 'PHP',
         imagePath: 'img/php/php-plain.svg',
@@ -53,6 +53,11 @@ const skills = [
         name: 'Laravel',
         imagePath: 'img/laravel/laravel-plain.svg',
         deviconClass: 'devicon-laravel-plain',
+    },
+    {
+        name: 'Java',
+        imagePath: 'img/java/java-plain.svg',
+        deviconClass: 'devicon-java-plain',
     },
     {
         name: 'NodeJS',
@@ -75,15 +80,20 @@ const skills = [
         deviconClass: 'devicon-mongodb-plain',
     },
     {
+        name: 'Git',
+        imagePath: 'img/git/git-plain.svg',
+        deviconClass: 'devicon-git-plain',
+    },
+    {
         name: 'Docker',
         imagePath: 'img/docker/docker-plain.svg',
         deviconClass: 'devicon-docker-plain',
     },
-    {
-        name: 'Kubernetes',
-        imagePath: 'img/kubernetes/kubernetes_knockout.png',
-        deviconClass: '',
-    },
+    // {
+    //     name: 'Kubernetes',
+    //     imagePath: 'img/kubernetes/icons8-kubernetes-50_white.png',
+    //     deviconClass: null,
+    // },
     {
         name: 'AWS',
         imagePath: 'img/amazonwebservices/amazonwebservices-original.svg',

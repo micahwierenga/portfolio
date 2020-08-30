@@ -228,27 +228,16 @@ h3 {
 
 .service-item {
     margin-bottom: 30px;
+    -webkit-transition: background .5s linear;
+    -moz-transition: background .5s linear;
+    -o-transition: background .5s linear;
+    -ms-transition: background .5s linear;
+    transition: background .5s linear;
 }
 
-.front, .back {
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
+.service-item.exp a {
+    color: var(--tertiary);
 }
-
-.back {
-    transform: rotateY(180deg);
-    background: var(--tertiary);
-    color: var(--primary);
-}
-
-/* .experience-container {
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-} */
-
-/* .experience-container:hover {
-    transform: rotateY(180deg);
-} */
 
 .skills-container {
     display: grid;
@@ -260,6 +249,11 @@ h3 {
 
 .skill-icon {
     width: 4rem;
+}
+
+.devicon-icon {
+    font-size: 4rem;
+    color: var(--secondary);
 }
 
 .skill-container {
@@ -280,12 +274,39 @@ h3 {
 
 .faded-white {
     background-color: var(--tertiary);
+    -webkit-transition: background .5s linear;
+    -moz-transition: background .5s linear;
+    -o-transition: background .5s linear;
+    -ms-transition: background .5s linear;
+    transition: background .5s linear;
 }
 
 .found-skill-name {
     visibility: visible;
     color: var(--primary);
 }
+
+div.hover {
+    margin: 40px 0 20px;
+    background: white;
+    color: var(--primary);
+}
+
+.experience-description {
+    font-size: 1.25em;
+    text-align: left;
+    line-height: 2em;
+    -webkit-transition: background .5s linear;
+    -moz-transition: background .5s linear;
+    -o-transition: background .5s linear;
+    -ms-transition: background .5s linear;
+    transition: background .5s linear;
+}
+
+.experience-description-padding {
+    padding: 30px 80px;
+}
+
 
 /* Callout */
 
@@ -539,6 +560,11 @@ h3 {
         background: var(--secondary);
         padding: 5px;
         min-height: 55px;
+        width: 70%;
+        margin: 30px auto;
+    }
+
+    .experience-description {
         width: 70%;
         margin: 30px auto;
     }
