@@ -53,6 +53,15 @@ body {
     color: var(--tertiary);
 }
 
+.bg-primary {
+    background: var(--primary);
+}
+
+.bg-secondary {
+    background: var(--secondary);
+    color: var(--tertiary);
+}
+
 /* Custom Button Styles */
 
 .btn-dark {
@@ -218,10 +227,6 @@ h3 {
 
 /* Experience/Education */
 
-.bg-primary {
-    background: var(--primary);
-}
-
 .services {
     padding: 50px 0;
 }
@@ -288,8 +293,7 @@ h3 {
 
 div.hover {
     margin: 40px 0 20px;
-    background: white;
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .experience-description {
@@ -305,6 +309,64 @@ div.hover {
 
 .experience-description-padding {
     padding: 30px 80px;
+}
+
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+.portfolio-description {
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: var(--primary);
+    margin-top: 30px;
+}
+
+.portfolio-description-link {
+    color: var(--tertiary);
+    text-decoration: none;
+}
+
+.portfolio-description-link:hover {
+    font-weight: 700;
+    color: var(--tertiary);
+    text-decoration: none;
+}
+
+.portfolio-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-icon-container {
+    margin: 40px;
+}
+
+.portfolio-icon {
+    width: 14em;
+    height: 14em;
+    background-size: cover;
+}
+
+.portfolio-name {
+    margin-top: 20px;
+    font-size: 1.5em;
 }
 
 
@@ -337,24 +399,6 @@ div.hover {
 
 .callout-author {
     text-align: right;
-}
-
-/* Portfolio */
-
-.portfolio {
-    padding: 50px 0;
-}
-
-.portfolio-item {
-    margin-bottom: 30px;
-}
-
-.img-portfolio {
-    margin: 0 auto;
-}
-
-.img-portfolio:hover {
-    opacity: 0.8;
 }
 
 /* Call to Action */
@@ -588,5 +632,9 @@ footer li a {
 }
 
 footer li a:hover {
+    color: var(--secondary);
+}
+
+.list-unstyled li, .list-unstyled li a {
     color: var(--secondary);
 }

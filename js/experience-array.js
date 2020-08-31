@@ -5,7 +5,7 @@ const experience = [
         howLong: '2014 &mdash; 2016',
         id: 'ferrarifilms',
         link: 'http://www.ferrarifilms.com/',
-        description: 'stuff',
+        description: 'At Ferrari Films, my contributions included script writing, as well as the project management of most of our medical programs, from ensuring the content quality of our websites to tracking the timelines of video production.',
         skills: ['html5']
     },
     {
@@ -14,7 +14,7 @@ const experience = [
         howLong: '2016 &mdash; present',
         id: 'gastudent',
         link: 'https://generalassemb.ly/',
-        description: 'stuff',
+        description: 'As a fellow at General Assembly, I studied software engineering, which included building portfolio projects and providing assistance to my peers.',
         skills: ['html5', 'css3', 'javascript', 'jquery', 'git', 'nodejs', 'react', 'php', 'python', 'postgresql', 'mongodb']
     },
     {
@@ -23,7 +23,7 @@ const experience = [
         howLong: '2017 &mdash; 2019',
         id: 'remax',
         link: 'https://www.remax.com/',
-        description: 'stuff',
+        description: 'As a Team Lead at RE/MAX, I had the honor of maintaining, building, and coordinating features for the CRM product of nearly 40 independent real estate brokerages, as well as contributing to the new RE/MAX platform.',
         skills: [
             'html5',
             'css3',
